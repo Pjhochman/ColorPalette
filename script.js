@@ -11,6 +11,10 @@ let hasChanged = false;
 let osc;
 let volume;
 let meter;
+let message = String.fromCodePoint(0x1F641)
+
+window.addEventListener('blur', () => document.title = message + "Miss You. Please come back.");
+window.addEventListener('focus', () => document.title = "Color Palette");
 
 let synth = new Tone.MembraneSynth().toMaster();
 
@@ -26,13 +30,11 @@ fetch("data.json")
 function randomColor() {
   colorData = data[Math.floor(Math.random() * data.length)].colors;
   if (odd) {
-    console.log("vänster");
     color1 = colorData[0];
     color2 = colorData[1];
   } else {
     color3 = colorData[0];
     color4 = colorData[1];
-    console.log("höger");
   }
 }
 
@@ -72,7 +74,6 @@ function setup() {
 }
 
 function draw() {
-  console.log(mouseX);
   const level = meter.getLevel();
   const gain = decibelsToGain(level);
 
