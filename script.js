@@ -77,7 +77,7 @@ function draw() {
   const level = meter.getLevel();
   const gain = decibelsToGain(level);
 
-  background("#111");
+  background("#fff");
   dataValues.map((values, index) => {
     push();
 
@@ -105,7 +105,7 @@ function draw() {
       fill(gradientColor(ratio, color1, color2));
       strokeWeight(0);
     } else {
-      strokeWeight(0);
+      strokeWeight(0.0);
       fill(gradientColor(ratio, color3, color4));
     }
 
