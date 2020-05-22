@@ -77,7 +77,7 @@ function draw() {
   const level = meter.getLevel();
   const gain = decibelsToGain(level);
 
-  background("#fff");
+  background("#111");
   dataValues.map((values, index) => {
     push();
 
