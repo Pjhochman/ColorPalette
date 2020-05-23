@@ -16,7 +16,7 @@ let message = String.fromCodePoint(0x1F641)
 window.addEventListener('blur', () => document.title = message + "Miss You. Please come back.");
 window.addEventListener('focus', () => document.title = "Color Palette");
 
-let synth = new Tone.MembraneSynth().toMaster();
+// let synth = new Tone.MembraneSynth().toMaster();
 
 function decibelsToGain(value) {
   return Math.exp(value / 8.6858);
@@ -64,20 +64,20 @@ function setup() {
   createCanvas(800, 550, WEBGL);
   angleMode(DEGREES);
 
-  Tone.Master.volume.value = -24;
-  osc = new Tone.Oscillator();
-  volume = new Tone.Gain();
-  osc.connect(volume);
-  volume.connect(Tone.Master);
-  meter = new Tone.Meter();
-  Tone.Master.connect(meter);
+  // Tone.Master.volume.value = -24;
+  // osc = new Tone.Oscillator();
+  // volume = new Tone.Gain();
+  // osc.connect(volume);
+  // volume.connect(Tone.Master);
+  // meter = new Tone.Meter();
+  // Tone.Master.connect(meter);
 }
 
 function draw() {
-  const level = meter.getLevel();
-  const gain = decibelsToGain(level);
+  // const level = meter.getLevel();
+  // const gain = decibelsToGain(level);
 
-  background("#111");
+  background("#000000");
   dataValues.map((values, index) => {
     push();
 
@@ -114,16 +114,16 @@ function draw() {
   });
 }
 
-function mouseMoved() {
-  if (
-    (mouseX < 0 && mouseX > -10) ||
-    (mouseX > 800 && mouseX < 810 && mouseY > 15 && mouseY < 540)
-  ) {
-    synth.triggerAttackRelease("C2", "8n");
-  }
+// function mouseMoved() {
+//   if (
+//     (mouseX < 0 && mouseX > -10) ||
+//     (mouseX > 800 && mouseX < 810 && mouseY > 15 && mouseY < 540)
+//   ) {
+//     synth.triggerAttackRelease("C2", "8n");
+//   }
 
-  volume.gain.value = mouseX / width;
-}
+//   volume.gain.value = mouseX / width;
+// }
 
 let dataValues = [
   {
