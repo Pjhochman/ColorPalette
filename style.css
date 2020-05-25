@@ -20,7 +20,7 @@ canvas {
 }
 
 .topnav:hover {
-  font-size: 20px;
+  font-size: 15px;
   height: 70px;
 }
 
@@ -30,7 +30,7 @@ canvas {
   float: right;
   margin-top: 8px;
   margin-right: -18px;
-  font-size: 22px;
+  font-size: 18px;
   padding: 12px;
   background: linear-gradient(to right, #ff8a00 0%, #da1b60 100%);
   -webkit-background-clip: text;
@@ -42,8 +42,8 @@ canvas {
   text-decoration: none;
   float: right;
   margin-right: 10px;
-  margin-top: 6px;
-  font-size: 20px;
+  margin-top: 5px;
+  font-size: 17px;
   font-family: 'Saira', sans-serif;  
   padding: 16px;
   opacity: 0.8;
@@ -57,7 +57,7 @@ canvas {
   position: fixed;
   bottom: 40px;
   height: 90px;
-  transition: 0.6s;
+  transition: 0.8s;
   border-top-right-radius:  10px;
 }
 
@@ -71,7 +71,7 @@ canvas {
   margin-left: 25px;
   margin-right: 20px;
   font-size: 21px;
-  margin-top: 40px;
+  margin-top: 45px;
   position: relative;
   padding: 0;
   line-height: 20px;
