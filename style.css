@@ -3,7 +3,8 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000000;
-  font-family: 'Saira', sans-serif;}
+  font-family: "Saira", sans-serif;
+}
 canvas {
   position: absolute;
   top: 50%;
@@ -30,7 +31,7 @@ canvas {
   float: right;
   margin-top: 8px;
   margin-right: -18px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 12px;
   background: linear-gradient(to right, #ff8a00 0%, #da1b60 100%);
   -webkit-background-clip: text;
@@ -43,8 +44,8 @@ canvas {
   float: right;
   margin-right: 10px;
   margin-top: 5px;
-  font-size: 17px;
-  font-family: 'Saira', sans-serif;  
+  font-size: 15px;
+  font-family: "Saira", sans-serif;
   padding: 16px;
   opacity: 0.8;
 }
@@ -58,7 +59,7 @@ canvas {
   bottom: 40px;
   height: 90px;
   transition: 0.8s;
-  border-top-right-radius:  10px;
+  border-top-right-radius: 10px;
 }
 
 .botnav:hover {
@@ -75,6 +76,4 @@ canvas {
   position: relative;
   padding: 0;
   line-height: 20px;
-  
 }
-
